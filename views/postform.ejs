@@ -9,7 +9,7 @@
 <body class="bg-dark text-white">
   <div class="container mt-4 col-4 col-offset-6">
     <h1 class="display-3">POST form</h1>
-    <form method="POST" action="/mypost">
+    <form method="POST" action="/mypost" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="firstname" class="form-label">firstname</label>
         <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp">
@@ -21,7 +21,7 @@
       </div>
       <div class="mb-3">
         <label for="samplefile" class="form-label">samplefile</label>
-        <input type="file" name="samplefile" class="form-control" id="samplefile">
+        <input type="file" name="samplefile" multiple class="form-control" id="samplefile">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
